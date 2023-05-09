@@ -31,4 +31,6 @@ jobs:
           --branch $BRANCH \
           --project "datasette-preview-$BRANCH" \
           --token $VERCEL_TOKEN \
-          --alias "preview-$BRANCH.datasette.io"
+          --scope datasette \
+          --about "Preview of $BRANCH" \
+          --about_url "https://github.com/simonw/datasette/tree/$BRANCH"
